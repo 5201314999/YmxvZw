@@ -1,0 +1,52 @@
+@color-gray-lighter: #f2f2f2;
+@color-gray-light: #bbb;
+@color-gray: rgb(175, 165, 170);
+@color-gray-dark: rgb(117, 115, 113);
+@color-gray-darker: rgb(51, 52, 55);
+
+@color-red: rgb(255, 75, 75);
+
+body {
+  margin: 0;
+  font-family: "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", "SimSun", sans-serif;
+  color: @color-gray-dark;
+}
+
+h1, h2 {
+  color: @color-gray-darker;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.app{
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 100%;
+  width: 1000px;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 300px;
+    font-size: 20px;
+  }
+
+  &__title {
+    flex: 1;
+  }
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  height: 32px;
+  line-height: 32px;
+
+  &__item {
+    padding: 0 30px;
+    color: @color-gray-light;
+  }
+}
